@@ -1,0 +1,27 @@
+:root{
+    --max-w: 90rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero-nav-container{
+    max-width: var(--max-w);
+    margin: 0 auto;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.navigation .logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.logo:hover ~ #site-icon{
+    fill:blue;
+}
