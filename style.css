@@ -248,6 +248,12 @@
   transition: all 400ms ease-in-out;
   color: black;
 }
+.srv-card .srv-card-left .learn-more img{
+  transition: all 400ms ease-in-out;
+}
+.srv-card .srv-card-left .learn-more:hover > img{
+  transform: rotate(33deg);
+}
 .srv-card .srv-card-left .learn-more:hover{
   background-color: var(--Green, #b9ff66);
   color: #000;
@@ -437,6 +443,41 @@
     border-radius: 10px;
     cursor: unset;
   }
+  /* services responsive css */
+  .services-container{
+    padding: var(--mobile-padding);
+  }
+  .services-heading{
+    flex-direction: column;
+    font-size: 1.25rem;
+    padding: 1.25rem 0;
+  }
+  .srv-para{
+    max-width: 90%;
+    font-size: 0.9rem;
+  }
+  .services-cards{
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  .srv-card{
+    width: 100%;
+    padding: 3.25rem;
+  }
+  .srv-card-left,.srv-card-right{
+    width: 100%;
+  }
+  .srv-card .srv-card-left .learn-more{
+    max-width: 35%;
+  }
+  .srv-card .srv-card-left .learn-more:hover{
+    background-color: unset;
+  }
+  .srv-card .srv-card-left .learn-more p{
+    display: none;
+  }
+
+
 
  
 }
