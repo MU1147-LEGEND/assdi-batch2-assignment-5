@@ -236,6 +236,7 @@
 }
 .srv-card .srv-card-left .learn-more{
   display: flex;
+  max-width: 80%;
   align-items: center;
   gap: 0.9375rem;
   font-size: 1.125rem;
