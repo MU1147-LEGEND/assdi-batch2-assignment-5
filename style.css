@@ -22,6 +22,12 @@
   color: #000;
   font-weight: 600;
 }
+.bg-white-title{
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+}
 .hero-nav-container {
   max-width: var(--max-w);
   margin: 0 auto;
@@ -223,12 +229,22 @@
   justify-content: space-between;
   height: 25dvh;
 }
-.srv-card .srv-card-left .srv-card-heading{
-  font-size: 1.25rem;
-  font-weight: 600;
-  line-height: 1.75rem;
-  color: #000;
+.srv-card .srv-card-left .learn-more{
+  display: flex;
+  align-items: center;
+  gap: 0.9375rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color:#fff;
+  border-radius: 0.875rem;
+  cursor: pointer;
   font-style: normal;
+  transition: all 400ms ease-in-out;
+  color: black;
+}
+.learn-more img{
+  width: 2.5625rem;
+  height: 2.5625rem;
 }
 .srv-card .srv-card-right img{
   max-width: 100%;
@@ -236,6 +252,22 @@
   object-fit: cover;
   border-radius: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
