@@ -287,6 +287,20 @@
   color: #fff;
 }
 
+/* cta section css */
+.cta-container{
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: var(--pc-padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+  font-family: spaceGrotesk;
+  border-radius: 2.8125rem;
+  background: var(--Grey, #F3F3F3);
+  align-items: center;
+}
 
 
 
