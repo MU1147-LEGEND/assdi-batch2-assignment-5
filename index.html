@@ -7,9 +7,10 @@
     <title>Positivus</title>
   </head>
   <body>
+    <!-- navigation and hero section -->
     <div class="hero-nav-container">
       <div class="navigation">
-        <div class="logo">
+        <div class="logo" onmouseover="mouseHover()" onmouseout="mouseHoverOut()">
             <svg class="site-title" width="220" height="56" viewBox="0 0 220 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_330_1193)">
                 <g clip-path="url(#clip1_330_1193)">
@@ -33,33 +34,74 @@
                 <rect width="36" height="36" fill="white" transform="translate(0 10)"/>
                 </clipPath>
                 </defs>
-                </svg>
-                
+            </svg>      
         </div>
         <div class="menus">
+          <div class="menu-icon" onclick="toggleMenu(this)"><i class="fas fa-bars"></i>
+          </div>
           <ul>
-            <li class="manu-item">About us</li>
-            <li class="manu-item">Services</li>
-            <li class="manu-item">Use Cases</li>
-            <li class="manu-item">Pricing</li>
-            <li class="manu-item">Blog</li>
-            <li class="manu-button">Request a quote</li>
+            <li class="menu-item">About us</li>
+            <li class="menu-item">Services</li>
+            <li class="menu-item">Use Cases</li>
+            <li class="menu-item">Pricing</li>
+            <li class="menu-item">Blog</li>
+            <li class="menu-button menu-item">Request a quote</li>
           </ul>
         </div>
       </div>
-      <!-- <div class="hero">
+      <div class="hero">
         <div class="hero-left">
             <h1 class="hero-heading">Navigating the digital landscape for success</h1>
             <p class="hero-paragraph">We are a team of talented individuals who are passionate about helping businesses succeed. We focus on helping our clients navigate the digital landscape by providing them with the tools and resources they need to succeed.</p>
             <button class="hero-button">Book a consultation</button>
-        </div>
-        <div class="hero-right">
+          </div>
+          <div class="hero-right">
             <img src="./images/right-side-illustration.svg" alt="hero image">
-        </div>
-      </div> -->
+          </div>
+          <button class="hero-button-mobile">Book a consultation</button>
+      </div>
     </div>
-
-
+    <!-- company logo carousel -->
+    <div class="company-logo-container">
+      <div class="company">
+        <img src="./images/amazon.png" alt="amazon">
+      </div>
+      <div class="company">
+        <img src="./images/dribble.png" alt="amazon">
+      </div>
+      <div class="company">
+        <img src="./images/hubspot.png" alt="amazon">
+      </div>
+      <div class="company">
+        <img src="./images/notion.png" alt="amazon">
+      </div>
+      <div class="company">
+        <img src="./images/netflix.png" alt="amazon">
+      </div>
+      <div class="company">
+        <img src="./images/zoom.png" alt="amazon">
+      </div>
+    </div>
+    <!-- services section -->
+    <div class="services-container">
+      <div class="services-heading">
+        <h2>Our Services</h2>
+        <p>We offer a wide range of services to help you succeed in the digital landscape. Our team of experts is here to help you every step of the way.</p>
+      </div>
+      <div class="services-cards">
+        <div class="srv-card">
+          <div class="srv-card-left">
+            <h3>Search Engine Optimization</h3>
+            <div class="learn-more">
+              <img src="./images/learn-more.png" alt="more">
+              <p>Learn more</p>
+            </div>
+          </div>
+          <div class="srv-card-right"><img src="./images/seo.png" alt="seo"></div>
+        </div>
+      </div>
+    </div>
+  
     <!-- script links -->
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/5ad6d6220d.js" crossorigin="anonymous"></script>
