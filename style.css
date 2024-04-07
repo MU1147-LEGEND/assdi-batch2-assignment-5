@@ -19,12 +19,16 @@
 .bg-green-title{
   display: inline-block;
   background-color: var(--Green, #b9ff66);
+  border-radius: 10px;
+  padding: 3px;
   color: #000;
   font-weight: 600;
 }
 .bg-white-title{
   display: inline-block;
   background-color: #fff;
+  border-radius: 10px;
+  padding: 3px;
   color: #000;
   font-weight: 600;
 }
@@ -172,6 +176,7 @@
   max-width: var(--max-w);
   margin: 0 auto;
   padding: var(--pc-padding);
+  padding-bottom: 3rem;
   gap: 1.25rem;
   font-family: spaceGrotesk;
 }
@@ -221,7 +226,7 @@
   transform: translateY(-5px);
 }
 .srv-card-left,.srv-card-right{
-  max-width: 50%;
+  width: 50%;
 }
 .srv-card .srv-card-left{
   display: flex;
@@ -252,8 +257,24 @@
   object-fit: cover;
   border-radius: 10px;
 }
-
-
+.ppc{
+  background-color: var(--Green, #b9ff66);
+}
+.smm{
+  background-color: var(--Dark, #191a23);
+}
+.smm .learn-more p{
+  color: #fff;
+}
+.cc{
+  background-color: var(--Green, #b9ff66);
+}
+.aNt{
+  background-color: var(--Dark, #191a23);
+}
+.aNt .learn-more p{
+  color: #fff;
+}
 
 
 
