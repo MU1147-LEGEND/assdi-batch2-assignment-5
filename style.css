@@ -247,6 +247,10 @@
   transition: all 400ms ease-in-out;
   color: black;
 }
+.srv-card .srv-card-left .learn-more:hover{
+  background-color: var(--Green, #b9ff66);
+  color: #000;
+}
 .learn-more img{
   width: 2.5625rem;
   height: 2.5625rem;
