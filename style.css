@@ -258,6 +258,7 @@
   background-color: var(--Green, #b9ff66);
   color: #000;
 }
+
 .learn-more img{
   width: 2.5625rem;
   height: 2.5625rem;
@@ -268,38 +269,80 @@
   object-fit: cover;
   border-radius: 10px;
 }
-.ppc{
+.ppc,.cc{
   background-color: var(--Green, #b9ff66);
 }
-.smm{
+.smm,.aNt{
   background-color: var(--Dark, #191a23);
 }
-.smm .learn-more p{
+.smm .learn-more p,.aNt .learn-more p{
   color: #fff;
 }
-.cc{
-  background-color: var(--Green, #b9ff66);
+.smm .learn-more:hover > p, .aNt .learn-more:hover > p{
+  color: #000;
 }
-.aNt{
-  background-color: var(--Dark, #191a23);
-}
-.aNt .learn-more p{
-  color: #fff;
+.cc .srv-card-left .learn-more:hover,.ppc .srv-card-left .learn-more:hover{
+  background-color: var(--Grey, #f2f2f2);
+  color: #000;
 }
 
 /* cta section css */
 .cta-container{
   max-width: var(--max-w);
-  margin: 0 auto;
+  font-family: spaceGrotesk;
   padding: var(--pc-padding);
+}
+.cta-wrapper{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 1.25rem;
-  font-family: spaceGrotesk;
   border-radius: 2.8125rem;
   background: var(--Grey, #F3F3F3);
-  align-items: center;
+  height: 21.6875rem;
+  padding: 0rem 3.75rem;
+}
+.cta-left,.cta-right{
+width: 50%;
+}
+.cta-right{
+  text-align: right;
+}
+.cta-wrapper .cta-left .cta-header{
+  max-width: 31.25rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+  color: #000;
+  font-style: normal;
+}
+.cta-wrapper .cta-left .cta-desc{
+  max-width: 31.25rem;
+  color: #000;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+}
+.cta-wrapper .cta-left .cta-button{
+  display: inline-block;
+  padding: 1.25rem 2.1875rem;
+  margin-top: 20px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  color:#fff;
+  background-color: var(--Dark, #191a23);
+  border-radius: 0.875rem;
+  cursor: pointer;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  transition: all 300ms ease-in-out;
+}
+.cta-wrapper .cta-left .cta-button:hover{
+  background-color: var(--Green, #b9ff66);
+  color: #000;
 }
 
 
@@ -488,6 +531,30 @@
     background-color: unset;
   }
   .srv-card .srv-card-left .learn-more p{
+    display: none;
+  }
+  /* cta section responsive css */
+  .cta-container{
+    max-width: var(--mobile-max);
+    padding: var(--mobile-padding);
+  }
+  .cta-wrapper{
+    flex-direction: column;
+    height: 100%;
+  }
+  .cta-wrapper .cta-left .cta-header{
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+  }
+  .cta-wrapper .cta-left .cta-desc{
+    font-size: 1rem;
+  }
+  .cta-wrapper .cta-left .cta-button{
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+  }
+  .cta-wrapper .cta-right{
     display: none;
   }
 
