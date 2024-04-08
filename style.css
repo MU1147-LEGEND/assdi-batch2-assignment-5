@@ -537,10 +537,12 @@ width: 50%;
   .cta-container{
     max-width: var(--mobile-max);
     padding: var(--mobile-padding);
+    margin: 2rem 0;
   }
   .cta-wrapper{
     flex-direction: column;
     height: 100%;
+    padding: 2.25rem;
   }
   .cta-wrapper .cta-left .cta-header{
     font-size: 1.75rem;
@@ -553,9 +555,13 @@ width: 50%;
     display: block;
     width: 100%;
     font-size: 1rem;
+    cursor: unset;
   }
   .cta-wrapper .cta-right{
     display: none;
+  }
+  .cta-wrapper .cta-left{
+    width: 100%;
   }
 
 
