@@ -10,6 +10,6 @@ function toggleMenu(e){
     // menu.style.left = "10%";
     e.firstElementChild.classList.toggle("xmark");
 }
-function btnClickimgChange(e){
-    console.log(e);
-}
+// function btnClickimgChange(e){
+//     e.firstElementChild.setAttribute("src", "images/learn-more.png");
+// }
