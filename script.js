@@ -9,5 +9,7 @@ function toggleMenu(e){
     menu.classList.toggle("menu-expand-js");
     // menu.style.left = "10%";
     e.firstElementChild.classList.toggle("xmark");
-
+}
+function btnClickimgChange(e){
+    console.log(e);
 }

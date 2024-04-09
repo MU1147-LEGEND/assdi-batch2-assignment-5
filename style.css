@@ -196,7 +196,7 @@
   text-align: justify;
   max-width: 36.25rem;
   color: #000;
-  font-size: 0.9rem;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -252,7 +252,7 @@
   transition: all 400ms ease-in-out;
 }
 .srv-card .srv-card-left .learn-more:hover > img{
-  transform: rotate(33deg);
+  transform: rotate(28deg);
 }
 .srv-card .srv-card-left .learn-more:hover{
   background-color: var(--Green, #b9ff66);
@@ -344,6 +344,114 @@ width: 50%;
   background-color: var(--Green, #b9ff66);
   color: #000;
 }
+
+/* case studies css section */
+.case-studies-container{
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: var(--pc-padding);
+  padding-bottom: 3rem;
+  gap: 1.25rem;
+  font-family: spaceGrotesk;
+}
+.case-studies-heading{
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 3rem 0;
+  margin-top: 1.25rem;
+  font-size: 1.55rem;
+  font-weight: 500;
+}
+.cs-para{
+  text-align: justify;
+  max-width: 36.25rem;
+  color: #000;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 1.125rem;
+}
+.case-studies-cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: var(--Dark, #191a23);
+  border-radius: 2.8125rem;
+}
+.case-studies-cards .cs-card{
+  width: 37.5rem;
+  flex: 0 1 49%;
+  padding: 3.125rem;
+  margin-top: 1.25rem;
+}
+.case-studies-cards .cs-card .cs-top p{
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+}
+.case-studies-cards .cs-card .cs-bottom{
+  color: var(--Green, #b9ff66);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.25rem;
+  gap: 0.9375rem;
+}
+.cs-bottom .cs-learn-btn{
+  padding: 0.75rem 1.1875rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  color:#fff;
+  background-color: var(--Dark, #191a23);
+  border-radius: 0.875rem;
+  cursor: pointer;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  transition: all 400ms ease-in-out;
+}
+.cs-bottom .cs-learn-btn:hover{
+  background-color: var(--Green, #b9ff66);
+  color: #000;
+}
+
+.vertical-line{
+  background: #FFF;
+  width: 0.0625rem;
+  height: 11.625rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -526,6 +634,7 @@ width: 50%;
   }
   .srv-card .srv-card-left .learn-more{
     max-width: 35%;
+    cursor: unset;
   }
   .srv-card .srv-card-left .learn-more:hover{
     background-color: unset;
