@@ -197,6 +197,7 @@
   max-width: 36.25rem;
   color: #000;
   font-size: 1.125rem;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -252,6 +253,7 @@
   transition: all 400ms ease-in-out;
 }
 .srv-card .srv-card-left .learn-more:hover > img{
+  transform: rotate(28deg);
   transform: rotate(28deg);
 }
 .srv-card .srv-card-left .learn-more:hover{
@@ -634,6 +636,7 @@ width: 50%;
   }
   .srv-card .srv-card-left .learn-more{
     max-width: 35%;
+    cursor: unset;
     cursor: unset;
   }
   .srv-card .srv-card-left .learn-more:hover{
