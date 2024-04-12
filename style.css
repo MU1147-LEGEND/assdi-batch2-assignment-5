@@ -16,6 +16,8 @@
   font-family: spaceGrotesk;
   src: url(./fonts/space-grotesk/SpaceGrotesk-2.0.0/ttf/static/SpaceGrotesk-Regular.ttf);
 }
+
+/* common css for every section */
 .bg-green-title{
   display: inline-block;
   background-color: var(--Green, #b9ff66);
@@ -32,12 +34,37 @@
   color: #000;
   font-weight: 600;
 }
-.hero-nav-container {
+.full-containers{
   max-width: var(--max-w);
   margin: 0 auto;
   padding: var(--pc-padding);
+  padding-bottom: 3rem;
+  gap: 1.25rem;
   font-family: spaceGrotesk;
 }
+.all-heading{
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 3rem 0;
+  margin-top: 1.25rem;
+  font-size: 1.55rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.h-para{
+  text-align: justify;
+  max-width: 36.25rem;
+  color: #000;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* navigation section css */
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -172,35 +199,6 @@
 }
 
 /* services section css */
-.services-container{
-  max-width: var(--max-w);
-  margin: 0 auto;
-  padding: var(--pc-padding);
-  padding-bottom: 3rem;
-  gap: 1.25rem;
-  font-family: spaceGrotesk;
-}
-.services-heading{
-  color: #000;
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-  padding: 3rem 0;
-  margin-top: 1.25rem;
-  font-size: 1.55rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-.srv-para{
-  text-align: justify;
-  max-width: 36.25rem;
-  color: #000;
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
 .services-cards{
   display: flex;
   justify-content: space-between;
@@ -347,34 +345,6 @@ width: 50%;
 }
 
 /* case studies css section */
-.case-studies-container{
-  max-width: var(--max-w);
-  margin: 0 auto;
-  padding: var(--pc-padding);
-  padding-bottom: 3rem;
-  gap: 1.25rem;
-  font-family: spaceGrotesk;
-}
-.case-studies-heading{
-  color: #000;
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-  padding: 3rem 0;
-  margin-top: 1.25rem;
-  font-size: 1.55rem;
-  font-weight: 500;
-}
-.cs-para{
-  text-align: justify;
-  max-width: 36.25rem;
-  color: #000;
-  font-size: 0.9rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  font-size: 1.125rem;
-}
 .case-studies-cards{
   display: flex;
   justify-content: space-between;
@@ -432,11 +402,28 @@ width: 50%;
   padding: 0.5rem;
   pointer-events: none;
 }
-
 .vertical-line{
   background: #FFF;
   width: 0.0625rem;
   height: 11.625rem;
+}
+
+/* our working process section css */
+.owp-accordion{
+  padding: 3rem 0;
+}
+.owp-accordion-item{
+  width: 100%;
+  padding: 1.25rem;
+  background-color: var(--Grey, #f2f2f2);
+  border-radius: 1.8125rem;
+  border: 1px solid #191A23;
+  box-shadow: 0px 5px 0px 0px #191A23;
+  margin-top: 1.25rem;
+  transition: all 400ms ease-in-out;
+}
+.owp-accordion-item:hover{
+  transform: translateY(-1px);
 }
 
 
@@ -499,6 +486,22 @@ width: 50%;
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
+
+  /* common responsive css  */
+  .full-containers{
+    max-width: var(--mobile-max);
+    padding: var(--mobile-padding);
+    padding-bottom: 3rem;
+    gap: 1.25rem;
+    font-family: spaceGrotesk;
+  }
+  .all-heading{
+    flex-direction: column;
+    font-size: 1.25rem;
+    padding: 1.25rem 0;
+    margin-top: 1.25rem;
+  }
+
   /* navigation section responsive css */
   .hero-nav-container {
     max-width: var(--mobile-max);
@@ -620,14 +623,6 @@ width: 50%;
     cursor: unset;
   }
   /* services responsive css */
-  .services-container{
-    padding: var(--mobile-padding);
-  }
-  .services-heading{
-    flex-direction: column;
-    font-size: 1.25rem;
-    padding: 1.25rem 0;
-  }
   .srv-para{
     max-width: 90%;
     font-size: 0.9rem;
@@ -685,14 +680,6 @@ width: 50%;
     width: 100%;
   }
   /* case studies responsive css */
-  .case-studies-container{
-    padding: var(--mobile-padding);
-  }
-  .case-studies-heading{
-    flex-direction: column;
-    font-size: 1.25rem;
-    padding: 1.25rem;
-  }
   .case-studies-cards{
     display: block;
     padding: var(--mobile-padding); 

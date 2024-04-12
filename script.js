@@ -7,9 +7,5 @@ function mouseHoverOut(){
 function toggleMenu(e){
     var menu = document.querySelector(".menus").children[1];
     menu.classList.toggle("menu-expand-js");
-    // menu.style.left = "10%";
     e.firstElementChild.classList.toggle("xmark");
 }
-// function btnClickimgChange(e){
-//     e.firstElementChild.setAttribute("src", "images/learn-more.png");
-// }
