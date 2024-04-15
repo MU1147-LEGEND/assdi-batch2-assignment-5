@@ -63,6 +63,9 @@
   font-weight: 400;
   line-height: normal;
 }
+hr{
+  border: 1px solid #000;
+}
 
 /* navigation section css */
 .navigation {
@@ -483,8 +486,70 @@ input[type="radio"]:checked ~ .owp-accordion-item-content{
 }
 input[type="radio"]:checked ~ hr{opacity: 1;}
 
-
-
+/* team section css */
+.team-cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: 3rem 0;
+}
+.team-card{
+  max-width: 30%;
+  padding: 3.125rem;
+  margin-top: 1.25rem;
+  background-color: var(--Grey, #f2f2f2);
+  border-radius: 2.8125rem;
+  border: 1px solid var(--Dark, #191a23);
+  box-shadow: 0px 5px 0px 0px #191a23;
+  transition: all 400ms ease-in-out;
+}
+.team-card:hover{
+  transform: translateY(-5px);
+}
+.team-card-top{
+  margin-bottom: 1.25rem;
+}
+.team-card-top .team-card-name-n-picture{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.55rem;
+}
+.t-image{
+  align-self: center;
+}
+.name-position{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.25rem;
+  align-self: flex-end;
+}
+.position{
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #000;
+}
+.linkedin{
+  align-self: flex-start;
+}
+.t-image{
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  mask-image: url(./images/blob.svg);
+}
+.team-divide{
+  opacity: 1;
+  height: auto;
+  width: 100%;
+}
+.team-card-bottom{
+  margin-top: 1.25rem;
+}
 
 
 
@@ -761,5 +826,15 @@ input[type="radio"]:checked ~ hr{opacity: 1;}
   .owp-accordion-item-header{
     cursor: unset;
   }
+  /* team section responsive css */
+  .team-cards {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  .team-card {
+    max-width: 100%;
+    padding: 2rem;
+  }
+
 
 }
