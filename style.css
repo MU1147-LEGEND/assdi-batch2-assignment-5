@@ -66,6 +66,26 @@
 hr{
   border: 1px solid #000;
 }
+.black-button {
+  padding: 1.25rem 2.1875rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  color: #fff;
+  background-color: var(--Dark, #191a23);
+  border-radius: 0.875rem;
+  cursor: pointer;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  transition: all 400ms ease-in-out;
+}
+.black-button:hover {
+  background-color: var(--Green, #b9ff66);
+  color: #000;
+}
 
 /* navigation section css */
 .navigation {
@@ -150,26 +170,6 @@ hr{
   line-height: 1.75rem;
   color: #000;
   font-style: normal;
-}
-.hero-left .hero-button {
-  padding: 1.25rem 2.1875rem;
-  font-size: 1.125rem;
-  font-weight: 500;
-  line-height: 1.75rem;
-  color: #fff;
-  background-color: var(--Dark, #191a23);
-  border-radius: 0.875rem;
-  cursor: pointer;
-  text-align: center;
-  font-style: normal;
-  font-weight: 400;
-  outline: none;
-  border: none;
-  transition: all 400ms ease-in-out;
-}
-.hero-left .hero-button:hover {
-  background-color: var(--Green, #b9ff66);
-  color: #000;
 }
 .hero-right img {
   max-width: 85%;
@@ -549,6 +549,14 @@ input[type="radio"]:checked ~ hr{opacity: 1;}
 }
 .team-card-bottom{
   margin-top: 1.25rem;
+}
+.see-btn{
+  text-align: right;
+}
+
+/* testimonials section css */
+.testimonials-container{
+  
 }
 
 

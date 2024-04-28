@@ -20,7 +20,7 @@ function toggleAccordion(e) {
     parentElem.style.backgroundColor = "#b9ff66";
   }
 }
-function accordionItemBackgroundChange() {
+const accordCall = function accordionItemBackgroundChange() {
   let owpItem = document.querySelectorAll(".owp-accordion-item");
   owpItem.forEach((item) => {
     item.addEventListener("click", function () {
@@ -33,4 +33,4 @@ function accordionItemBackgroundChange() {
     });
   });
 }
-accordionItemBackgroundChange();
+accordCall();
